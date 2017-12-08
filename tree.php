@@ -2,14 +2,14 @@
 class TreeNode
 {
     public $value;    // contains the node item
-    public $Dir();     // Directories
+    public $Dir();     // Directories Points to other TreeNodes
     public $Files();     // the right child BinaryNode
 
     public function __construct($item) {
         $this->value = $item;
         // new nodes are leaf nodes
-        $this->left = null;
-        $this->right = null;
+        $this->Dir = array();
+        $this->Files=array();
     }
 }
 
